@@ -10,30 +10,58 @@
 // prohibited.
 
 import PackageDescription
-
-let package = Package(
-    name: "Tealeaf",
-    products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(
-            name: "Tealeaf",
-            targets: ["Tealeaf", "EOCore"]),
-    ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-        //
-    ],
-    targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .binaryTarget(
-            name: "Tealeaf",
-            url: "https://github.com/acoustic-analytics/IBMTealeaf/releases/download/10.6.73/Tealeaf_XCFrameworks_Debug.zip",
-            checksum: "434ba14d8c4f7e718095c5a1645acd5f92d8c28b0d8d8f0e38113cc26ec618fc"),
-        .binaryTarget(
-            name: "EOCore",
-            url: "https://github.com/acoustic-analytics/EOCore/releases/download/2.3.33/EOCore_XCFrameworks_Debug.zip",
-            checksum: "7e956fda716a51b1d11e7bdbabb453868318e9c3949cba0c35aa2a0d3319079b"),
-    ]
-)
+#if DEBUG
+    let package = Package(
+        name: "Tealeaf",
+        products: [
+            // Products define the executables and libraries a package produces, and make them visible to other packages.
+            .library(
+                name: "Tealeaf",
+                targets: ["Tealeaf", "EOCore"]),
+        ],
+        dependencies: [
+            // Dependencies declare other packages that this package depends on.
+            // .package(url: /* package url */, from: "1.0.0"),
+            //
+        ],
+        targets: [
+            // Targets are the basic building blocks of a package. A target can define a module or a test suite.
+            // Targets can depend on other targets in this package, and on products in packages this package depends on.
+            .binaryTarget(
+                name: "Tealeaf",
+                url: "https://github.com/acoustic-analytics/IBMTealeaf/releases/download/10.6.73/Tealeaf_XCFrameworks_Debug.zip",
+                checksum: "434ba14d8c4f7e718095c5a1645acd5f92d8c28b0d8d8f0e38113cc26ec618fc"),
+            .binaryTarget(
+                name: "EOCore",
+                url: "https://github.com/acoustic-analytics/EOCore/releases/download/2.3.33/EOCore_XCFrameworks_Debug.zip",
+                checksum: "7e956fda716a51b1d11e7bdbabb453868318e9c3949cba0c35aa2a0d3319079b"),
+        ]
+    )
+#else
+    let package = Package(
+        name: "Tealeaf",
+        products: [
+            // Products define the executables and libraries a package produces, and make them visible to other packages.
+            .library(
+                name: "Tealeaf",
+                targets: ["Tealeaf", "EOCore"]),
+        ],
+        dependencies: [
+            // Dependencies declare other packages that this package depends on.
+            // .package(url: /* package url */, from: "1.0.0"),
+            //
+        ],
+        targets: [
+            // Targets are the basic building blocks of a package. A target can define a module or a test suite.
+            // Targets can depend on other targets in this package, and on products in packages this package depends on.
+            .binaryTarget(
+                name: "Tealeaf",
+                url: "https://github.com/acoustic-analytics/IBMTealeaf/releases/download/10.6.73/Tealeaf_XCFrameworks_Release.zip",
+                checksum: "67736ae48c67d1136ab7aa7fae6a83bb26a4d74776cb3b51d222e9aeef8d8191"),
+            .binaryTarget(
+                name: "EOCore",
+                url: "https://github.com/acoustic-analytics/EOCore/releases/download/2.3.33/EOCore_XCFrameworks_Release.zip",
+                checksum: "61a7a30d5b0812c134ff9a141b3091e26483b759411f9c2ed2102b3fa632040a"),
+        ]
+    )
+#endif
