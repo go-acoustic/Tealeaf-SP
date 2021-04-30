@@ -5,6 +5,26 @@ Tealeaf-SP is the Swift Package for Tealeaf that is a customer behavioral analyt
 
 ## Getting Started
 
+![Step 1](https://github.com/acoustic-analytics/Tealeaf-SP/blob/main/images/sp_1.png?raw=true)
+
+In **XCode**, go to **File** and select **Swift Packages**
+
+![Step 2](https://github.com/acoustic-analytics/Tealeaf-SP/blob/main/images/sp_2.png?raw=true)
+
+Then add **Swift Package** to corresponding **Project**
+
+![Step 3](https://github.com/acoustic-analytics/Tealeaf-SP/blob/main/images/sp_3.png?raw=true)
+
+Add **github repo url** to where the Swift Package exists
+
+![Step 4](https://github.com/acoustic-analytics/Tealeaf-SP/blob/main/images/sp_4.png?raw=true)
+
+Add corresponding version
+
+![Step 5](https://github.com/acoustic-analytics/Tealeaf-SP/blob/main/images/sp_5.png?raw=true)
+
+Select correct **Target** to add **Swift Package**
+
 ### Prerequisites
 
 You need to have XCode 12.x that supports Swift Packages to use this item. Otherwise use https://github.com/acoustic-analytics/IBMTealeaf
