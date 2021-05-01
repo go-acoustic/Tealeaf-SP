@@ -30,11 +30,11 @@ import PackageDescription
             .binaryTarget(
                 name: "Tealeaf",
                 url: "https://github.com/acoustic-analytics/IBMTealeaf/releases/download/10.6.73/Tealeaf_XCFrameworks_Debug.zip",
-                checksum: "434ba14d8c4f7e718095c5a1645acd5f92d8c28b0d8d8f0e38113cc26ec618fc"),
+                checksum: "34a1b645136ace463f0dc4a4293477187dc8511e3b309a0fd6fdd8121575981b"),
             .binaryTarget(
                 name: "EOCore",
                 url: "https://github.com/acoustic-analytics/EOCore/releases/download/2.3.33/EOCore_XCFrameworks_Debug.zip",
-                checksum: "7e956fda716a51b1d11e7bdbabb453868318e9c3949cba0c35aa2a0d3319079b"),
+                checksum: "4b0a2a39c73cd8512b3e6e876609f9fb50e1a718c9f9e42503d2713e81a794b8"),
         ]
     )
 #else
@@ -57,11 +57,11 @@ import PackageDescription
             .binaryTarget(
                 name: "Tealeaf",
                 url: "https://github.com/acoustic-analytics/IBMTealeaf/releases/download/10.6.73/Tealeaf_XCFrameworks_Release.zip",
-                checksum: "67736ae48c67d1136ab7aa7fae6a83bb26a4d74776cb3b51d222e9aeef8d8191"),
+                checksum: "c1a5f938f5e76416fab63485a0f48d18adad972c53c1f25a0596b197e5b5386e"),
             .binaryTarget(
                 name: "EOCore",
                 url: "https://github.com/acoustic-analytics/EOCore/releases/download/2.3.33/EOCore_XCFrameworks_Release.zip",
-                checksum: "61a7a30d5b0812c134ff9a141b3091e26483b759411f9c2ed2102b3fa632040a"),
+                checksum: "4afc44c861331b3aafc9b5f22f90210528190fd85e7f3403962583e72e26ee13"),
         ]
     )
 #endif
