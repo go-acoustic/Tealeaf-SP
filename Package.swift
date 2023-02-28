@@ -35,7 +35,7 @@ let package = Package(
         .binaryTarget(
             name: "Tealeaf",
             url: "https://github.com/acoustic-analytics/Tealeaf/releases/download/10.6.251/Tealeaf_XCFramework_Release.zip",
-            checksum: "5cd3ad5b484876f15cf0dd78ee9121c888acd8d6245b77669a2d81480d02c8c6"),
+            checksum: "dae12ae7fcd43961cf6a185e4b7745af7e1dbc48a578ada496a1f91f2d8117e5"),
         .binaryTarget(
             name: "EOCore",
             url: "https://github.com/acoustic-analytics/EOCore/releases/download/2.3.253/EOCore_XCFramework_Release.zip",
