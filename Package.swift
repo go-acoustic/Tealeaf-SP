@@ -16,7 +16,7 @@ print("Using Tealeaf release version, if you need debug version use https://gith
 let package = Package(
     name: "Tealeaf",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v15)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -34,11 +34,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "Tealeaf",
-            url: "https://github.com/go-acoustic/Tealeaf/releases/download/10.6.331/Tealeaf_XCFramework_Release.zip",
-            checksum: "3b3bf3ed3e8da981c514fbc351bc3a5747194eefeef01e0d073590b42dd813d2"),
+            url: "https://github.com/go-acoustic/Tealeaf/releases/download/10.6.336/Tealeaf_XCFramework_Release.zip",
+            checksum: "7c6fa83d67d4ea5f7a6aebec5a34a63a1e1d8756c9ca6a0dc11e9040f988aeec"),
         .binaryTarget(
             name: "EOCore",
-            url: "https://github.com/go-acoustic/EOCore/releases/download/2.3.268/EOCore_XCFramework_.zip",
-            checksum: "bfb8891d59ef7b6b5b878903bf74b36de1b35ea7386def0002ea0868d5561c05"),
+            url: "https://github.com/go-acoustic/EOCore/releases/download/2.3.337/EOCore_XCFramework_.zip",
+            checksum: "fad456e79af9a69400663bdcf2e5a2f03d57a7b9a141d85ee378d474954f69bf"),
     ]
 )
